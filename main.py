@@ -7,7 +7,7 @@ TOKEN = os.environ['DISCORD_BOT_TOKEN']
 # DATABASE_URL = os.environ['DATABASE_URL']　
 
 CHANNEL_ID = 761162241877475339  # 任意のチャンネルID(int)
-GREET_TEXT = "Hello there!"  # これは外部でtextとして保存する
+GREET_TEXT = "Hello there! Are you happy?"  # これは外部でtextとして保存する
 
 
 bot = commands.Bot(command_prefix='$')
