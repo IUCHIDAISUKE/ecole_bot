@@ -40,7 +40,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
-    await greet()
+    # await greet()
 
 
 @client.event
