@@ -1,1 +1,1 @@
-echolebot: python main.py
+ecolebot: python main.py

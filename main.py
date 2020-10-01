@@ -3,7 +3,7 @@ import discord
 import random
 import os
 
-TOKEN = os.environ['DISCORD_BOT_TOKEN']
+# TOKEN = os.environ['DISCORD_BOT_TOKEN']
 # DATABASE_URL = os.environ['DATABASE_URL']　
 
 CHANNEL_ID = 761162241877475339  # 任意のチャンネルID(int)
@@ -45,7 +45,7 @@ async def on_ready():
 
 @client.event
 async def on_disconnect():
-    print('see you tomorrow')
+    print('see you tomorro')
     await greet()
 
 
@@ -73,4 +73,4 @@ async def on_message(message):
             await message.channel.send(embed=embed)
             # await message.channel.send("GOOD")
 
-client.run(TOKEN)
+client.run("NzU5NjgwMTQ0NTIwMTE4Mjkz.X3BBRA.YaVxXqOrBR30h_HmKGARvBq6fFk")
