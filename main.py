@@ -2,30 +2,10 @@ from discord.ext import commands
 import discord
 import random
 import os
-"""
-Rule
 
-機能ごとでmoduleを分けること
-ここには、messageを送る以外のことは基本書かないようにすること！(バグチェックが容易になるはず)
-
-To-do
-1. 基本的な要素ごとでmodukeにわける
-2. データ分析platform作成
-3. DBとの連携、修正
-4. reaction stampでの挙動の判定(つまり追加、するしないとか)
-5. helpページの追加
-
-基本的に、マジックコマンドとしてdiscord上から操作が完結できるようにする。
-つまり、DBへの追加、修正はすべてbotとの会話で完結できるようにする。
-マジックコマンドかつ管理者以外は反応しないような設計にする。
-
-"""
-
-
-# TOKEN = os.environ['DISCORD_BOT_TOKEN']
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 # DATABASE_URL = os.environ['DATABASE_URL']　
 
-TOKEN = "NzU5NjgwMTQ0NTIwMTE4Mjkz.X3BBRA.kiqE6Pq_qRx09FvysztrBuuXyKM"
 CHANNEL_ID = 761162241877475339  # 任意のチャンネルID(int)
 GREET_TEXT = "Hello there!"  # これは外部でtextとして保存する
 
@@ -65,7 +45,7 @@ async def on_ready():
 
 @client.event
 async def on_disconnect():
-    print('Logged in as')
+    print('see you tomorrow')
     await greet()
 
 
