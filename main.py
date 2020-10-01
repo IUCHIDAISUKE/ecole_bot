@@ -3,7 +3,7 @@ import discord
 import random
 import os
 
-# TOKEN = os.environ['DISCORD_BOT_TOKEN']
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 # DATABASE_URL = os.environ['DATABASE_URL']　
 
 CHANNEL_ID = 761162241877475339  # 任意のチャンネルID(int)
